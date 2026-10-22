@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기업 검색 | DEFENSE LINK</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container navbar">
+        <a href="index.html" class="logo">
+            <img src="images/defenseline_logo.png" class="logo-image" alt="DEFENSE LINK 홈">
+        </a>
+
+        <nav class="nav-links">
+            <a href="index.html">홈</a>
+            <a href="about.html">기업소개</a>
+            <a href="standards.html">인증·규격</a>
+            <a href="consulting.html">데이터 컨설팅</a>
+            <a href="technology-quality.html">기술 품질</a>
+            <a href="quote.html">견적 신청</a>
+            <a href="companies.html" class="active">기업 검색</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <div class="sub-top-section">
+        <section class="page-banner">
+            <div class="container">
+                <div class="breadcrumb">홈 / 기업 검색</div>
+                <h1>방위산업 기업 검색</h1>
+                <p>
+                    기업 기본정보부터 재무·사업 분야, 뉴스·공시와 산업 분석까지
+                    기업을 이해하는 데 필요한 정보를 한곳에서 살펴보세요.
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <section class="section">
+        <div class="container">
+
+            <form class="filter-panel" action="companies.html">
+                <input
+                    type="search"
+                    name="q"
+                    placeholder="기업명 검색 (예: 기업 A, 데이터)"
+                    aria-label="기업명 또는 기술 검색"
+                    list="company-search-suggestions"
+                >
+                <datalist id="company-search-suggestions">
+                    <option value="기업 A — 무인체계 기술"></option>
+                    <option value="기업 B — 데이터·소프트웨어"></option>
+                    <option value="기업 C — 정밀 부품 제조"></option>
+                </datalist>
+
+                <select name="field" aria-label="산업 분야">
+                    <option value="">전체 분야</option>
+                    <option value="drone">드론·무인체계</option>
+                    <option value="data">데이터·AI·소프트웨어</option>
+                    <option value="aviation">항공·우주</option>
+                    <option value="naval">해양·함정</option>
+                    <option value="electronics">통신·전자·레이더</option>
+                    <option value="manufacturing">소재·부품·제조</option>
+                </select>
+
+                <button class="btn btn-primary" type="submit">
+                    검색
+                </button>
+                <button class="btn btn-outline" type="reset">
+                    초기화
+                </button>
+            </form>
+
+            <div class="section-heading">
+                <div>
+                    <h2>기업 검색 결과</h2>
+                    <p>기업별 기본정보와 사업·시장 분석 항목을 확인할 수 있습니다.</p>
+                </div>
+            </div>
+
+            <div class="company-results">
+
+                <article class="list-item company-result" data-name="기업 A 무인체계 기술" data-field="drone" data-keywords="무인 플랫폼 드론 시스템 개발">
+                    <div>
+                        <h3>기업 A — 무인체계 기술</h3>
+                        <p>
+                            무인 플랫폼 및 관련 기술 분야
+                        </p>
+                        <span class="tag">드론·무인체계</span>
+                        <span class="tag">시스템 개발</span>
+                        <details class="company-details">
+                            <summary>기업 분석 정보 보기</summary>
+                            <div class="company-data-grid">
+                                <section>
+                                    <h4>기업 기본 정보</h4>
+                                    <p>기업 소개, 소재지, 설립 정보, 인력 및 연락처</p>
+                                </section>
+                                <section>
+                                    <h4>재무 정보</h4>
+                                    <p>매출·영업이익·자산 등 연도별 주요 재무지표</p>
+                                </section>
+                                <section>
+                                    <h4>주요 사업 분야</h4>
+                                    <p>무인 플랫폼, 제품·기술 역량 및 방산 사업 분야</p>
+                                </section>
+                                <section>
+                                    <h4>최근 뉴스·공시</h4>
+                                    <p>기업 관련 주요 뉴스와 공시 자료, 게시 일자 및 출처</p>
+                                </section>
+                                <section>
+                                    <h4>주가 동향</h4>
+                                    <p>상장 기업에 한해 주가 흐름과 시가총액 등 시장 지표</p>
+                                </section>
+                                <section>
+                                    <h4>경쟁사·산업 분석</h4>
+                                    <p>유사 사업 기업 비교, 산업 동향과 시장 분석 정보</p>
+                                </section>
+                            </div>
+                        </details>
+                    </div>
+                </article>
+
+                <article class="list-item company-result" data-name="기업 B 데이터 소프트웨어" data-field="data" data-keywords="데이터 AI 소프트웨어">
+                    <div>
+                        <h3>기업 B — 데이터·소프트웨어</h3>
+                        <p>
+                            데이터 처리와 소프트웨어 개발 역량
+                        </p>
+                        <span class="tag">데이터·AI</span>
+                        <span class="tag">소프트웨어</span>
+                        <details class="company-details">
+                            <summary>기업 분석 정보 보기</summary>
+                            <div class="company-data-grid">
+                                <section>
+                                    <h4>기업 기본 정보</h4>
+                                    <p>기업 소개, 소재지, 설립 정보, 인력 및 연락처</p>
+                                </section>
+                                <section>
+                                    <h4>재무 정보</h4>
+                                    <p>매출·영업이익·자산 등 연도별 주요 재무지표</p>
+                                </section>
+                                <section>
+                                    <h4>주요 사업 분야</h4>
+                                    <p>데이터·AI, 소프트웨어 제품과 기술 역량</p>
+                                </section>
+                                <section>
+                                    <h4>최근 뉴스·공시</h4>
+                                    <p>기업 관련 주요 뉴스와 공시 자료, 게시 일자 및 출처</p>
+                                </section>
+                                <section>
+                                    <h4>주가 동향</h4>
+                                    <p>상장 기업에 한해 주가 흐름과 시가총액 등 시장 지표</p>
+                                </section>
+                                <section>
+                                    <h4>경쟁사·산업 분석</h4>
+                                    <p>유사 사업 기업 비교, 산업 동향과 시장 분석 정보</p>
+                                </section>
+                            </div>
+                        </details>
+                    </div>
+                </article>
+
+                <article class="list-item company-result" data-name="기업 C 정밀 부품 제조" data-field="manufacturing" data-keywords="소재 부품 정밀 제조">
+                    <div>
+                        <h3>기업 C — 정밀 부품 제조</h3>
+                        <p>
+                            정밀 부품 및 제조 역량
+                        </p>
+                        <span class="tag">소재·부품</span>
+                        <span class="tag">제조</span>
+                        <details class="company-details">
+                            <summary>기업 분석 정보 보기</summary>
+                            <div class="company-data-grid">
+                                <section>
+                                    <h4>기업 기본 정보</h4>
+                                    <p>기업 소개, 소재지, 설립 정보, 인력 및 연락처</p>
+                                </section>
+                                <section>
+                                    <h4>재무 정보</h4>
+                                    <p>매출·영업이익·자산 등 연도별 주요 재무지표</p>
+                                </section>
+                                <section>
+                                    <h4>주요 사업 분야</h4>
+                                    <p>정밀 부품, 소재 및 제조 역량</p>
+                                </section>
+                                <section>
+                                    <h4>최근 뉴스·공시</h4>
+                                    <p>기업 관련 주요 뉴스와 공시 자료, 게시 일자 및 출처</p>
+                                </section>
+                                <section>
+                                    <h4>주가 동향</h4>
+                                    <p>상장 기업에 한해 주가 흐름과 시가총액 등 시장 지표</p>
+                                </section>
+                                <section>
+                                    <h4>경쟁사·산업 분석</h4>
+                                    <p>유사 사업 기업 비교, 산업 동향과 시장 분석 정보</p>
+                                </section>
+                            </div>
+                        </details>
+                    </div>
+                </article>
+
+            </div>
+            <p class="company-search-status" id="company-search-status" role="status" aria-live="polite"></p>
+
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="container footer-inner">
+        <div>
+            <strong>DEFENSE LINK</strong>
+            <p>정보를 튼튼하게, 미래를 안전하게.</p>
+        </div>
+        <p>기업 분석 정보는 출처와 기준일을 확인해 활용해 주세요.</p>
+        <p class="copyright">© 2026 DEFENSE LINK. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    const companySearchForm = document.querySelector(".filter-panel");
+    const companySearchInput = companySearchForm.querySelector('input[name="q"]');
+    const companyFieldSelect = companySearchForm.querySelector('select[name="field"]');
+    const companyResults = Array.from(document.querySelectorAll(".company-result"));
+    const companySearchStatus = document.querySelector(".company-search-status");
+
+    const updateCompanyResults = () => {
+        const query = companySearchInput.value.trim().toLocaleLowerCase("ko");
+        const selectedField = companyFieldSelect.value;
+        let visibleCount = 0;
+        let firstVisibleCompany = null;
+
+        companyResults.forEach((company) => {
+            const searchableText = `${company.dataset.name} ${company.dataset.keywords}`.toLocaleLowerCase("ko");
+            const matchesQuery = !query || searchableText.includes(query);
+            const matchesField = !selectedField || company.dataset.field === selectedField;
+            const isVisible = matchesQuery && matchesField;
+
+            company.hidden = !isVisible;
+            if (isVisible) {
+                visibleCount += 1;
+                firstVisibleCompany = company;
+            }
+        });
+
+        companySearchStatus.textContent = visibleCount
+            ? ""
+            : "검색 결과가 없습니다. 기업명, 기술 또는 분야를 다시 확인해 주세요.";
+
+        if (query && visibleCount === 1) {
+            firstVisibleCompany.querySelector(".company-details").open = true;
+        } else {
+            companyResults.forEach((company) => {
+                company.querySelector(".company-details").open = false;
+            });
+        }
+    };
+
+    companySearchForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        updateCompanyResults();
+    });
+    companySearchInput.addEventListener("input", updateCompanyResults);
+    companyFieldSelect.addEventListener("change", updateCompanyResults);
+    companySearchForm.addEventListener("reset", () => {
+        requestAnimationFrame(updateCompanyResults);
+    });
+</script>
+
+</body>
+</html>

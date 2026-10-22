@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인증·규격 | DEFENSE LINK</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container navbar">
+        <a href="index.html" class="logo">
+            <img src="images/defenseline_logo.png" class="logo-image" alt="DEFENSE LINK 홈">
+        </a>
+
+        <nav class="nav-links">
+            <a href="index.html">홈</a>
+            <a href="about.html">기업소개</a>
+            <a href="standards.html" class="active">인증·규격</a>
+            <a href="consulting.html">데이터 컨설팅</a>
+            <a href="technology-quality.html">기술 품질</a>
+            <a href="quote.html">견적 신청</a>
+            <a href="companies.html">기업 검색</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <div class="sub-top-section">
+        <section class="page-banner">
+            <div class="container">
+                <div class="breadcrumb">홈 / 인증·규격</div>
+                <h1>인증·규격 솔루션</h1>
+                <p>
+                    방위산업 관련 인증, 품질 요구사항 및 규격 정보를
+                    체계적으로 탐색할 수 있도록 지원합니다.
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <section class="section">
+        <div class="container">
+
+            <div class="section-heading">
+                <div>
+                    <h2>인증·규격 정보 검색</h2>
+                    <p>찾고 싶은 정보의 종류를 선택하세요.</p>
+                </div>
+            </div>
+
+            <form class="filter-panel" action="standards.html">
+
+                <input
+                    type="search"
+                    name="q"
+                    placeholder="인증명, 규격명 또는 키워드 검색"
+                    aria-label="인증 및 규격 검색"
+                >
+
+                <select name="type" aria-label="정보 유형">
+                    <option value="">전체 유형</option>
+                    <option value="quality">품질경영</option>
+                    <option value="certification">인증</option>
+                    <option value="standard">기술 규격</option>
+                    <option value="procedure">절차 및 가이드</option>
+                </select>
+
+                <button type="submit" class="btn btn-primary">
+                    검색
+                </button>
+
+            </form>
+
+        </div>
+    </section>
+
+    <section class="section section-muted">
+        <div class="container">
+
+            <div class="section-heading">
+                <div>
+                    <h2>인증·규격 용어 설명</h2>
+                    <p>주요 인증, 품질경영 표준과 기술 규격의 의미를 확인하세요.</p>
+                </div>
+            </div>
+
+            <div class="list">
+
+                <article class="list-item" id="quality">
+                    <div>
+                        <h3>ISO 9000 시리즈</h3>
+                        <p>
+                            품질경영시스템의 기본 개념과 원칙, 관련 용어를 다루는 국제표준 시리즈입니다.<br>
+                            조직의 품질 관리 체계를 이해하고 구축하는 데 활용됩니다.<br>
+                            인증 심사는 주로 요구사항을 규정한 ISO 9001 기준으로 진행됩니다.
+                        </p>
+                        <span class="tag">품질경영 표준</span>
+                        <a class="btn btn-outline" href="https://www.iso.org/standard/45481.html" target="_blank" rel="noopener noreferrer">
+                            ISO 공식 자료 보기 ↗
+                        </a>
+                    </div>
+                </article>
+
+                <article class="list-item" id="certification">
+                    <div>
+                        <h3>DQ마크 (국방품질마크)</h3>
+                        <p>
+                            국방기술품질원이 방산 수출 촉진을 위해 우수 방산제품·부품의 품질을 평가해 부여하는 인증입니다.<br>
+                            인증을 통해 제품의 품질 신뢰도를 높이고 해외 판로 개척을 지원합니다.<br>
+                            대상 품목과 신청 요건은 공식 안내를 확인해야 합니다.
+                        </p>
+                        <span class="tag">방산 인증</span>
+                        <a class="btn btn-outline" href="https://www.dtaq.re.kr/ko/" target="_blank" rel="noopener noreferrer">
+                            국방기술품질원 공식 사이트 ↗
+                        </a>
+                    </div>
+                </article>
+
+                <article class="list-item" id="iso9001">
+                    <div>
+                        <h3>ISO 9001</h3>
+                        <p>
+                            제품·서비스의 일관된 품질과 고객 요구 충족을 위한 품질경영시스템 요구사항을 규정합니다.<br>
+                            업종과 규모에 관계없이 조직에 적용할 수 있는 국제표준입니다.<br>
+                            요구사항을 갖추고 외부 심사를 통과하면 인증을 취득할 수 있습니다.
+                        </p>
+                        <span class="tag">품질경영 인증</span>
+                        <a class="btn btn-outline" href="https://www.iso.org/standard/62085.html" target="_blank" rel="noopener noreferrer">
+                            ISO 공식 자료 보기 ↗
+                        </a>
+                    </div>
+                </article>
+
+                <article class="list-item" id="standard">
+                    <div>
+                        <h3>국방규격 및 MIL-STD</h3>
+                        <p>
+                            규격은 제품의 성능, 설계, 시험 방법 등 충족해야 할 기술 기준을 정한 문서입니다.<br>
+                            MIL-STD-810은 온도·진동 등 환경 조건에서 제품의 내구성을 시험하는 미군 규격입니다.<br>
+                            MIL-STD-461은 장비의 전자파 방출과 내성 요구사항을 다루며, 적용 규격과 개정판은 사업별로 확인해야 합니다.
+                        </p>
+                        <span class="tag">기술 규격</span>
+                        <a class="btn btn-outline" href="https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=35978" target="_blank" rel="noopener noreferrer">
+                            MIL-STD-810 공식 문서 ↗
+                        </a>
+                        <a class="btn btn-outline" href="https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=55469" target="_blank" rel="noopener noreferrer">
+                            MIL-STD-461 공식 문서 ↗
+                        </a>
+                    </div>
+                </article>
+
+                <article class="list-item" id="procedure">
+                    <div>
+                        <h3>국방품질경영체제 (DQMS)</h3>
+                        <p>
+                            방위산업의 품질관리 요구를 반영한 국방 분야 품질경영시스템입니다.<br>
+                            ISO 9001의 품질경영 원칙에 국방 분야의 특수한 요구사항을 더해 운영합니다.<br>
+                            군수품의 품질 확보와 지속적인 개선을 위한 체계로 활용됩니다.
+                        </p>
+                        <span class="tag">국방 품질경영</span>
+                        <a class="btn btn-outline" href="https://www.dtaq.re.kr/ko/" target="_blank" rel="noopener noreferrer">
+                            국방기술품질원 공식 사이트 ↗
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="container footer-inner">
+        <div>
+            <strong>DEFENSE LINK</strong>
+            <p>정보를 튼튼하게, 미래를 안전하게.</p>
+        </div>
+        <p>인증·규격 정보는 공식 출처 및 최신 개정 여부를 확인해야 합니다.</p>
+        <p class="copyright">© 2026 DEFENSE LINK. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
